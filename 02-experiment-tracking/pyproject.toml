@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "02-experiment-tracking"
+version = "0.1.0"
+description = ""
+authors = ["Luis Ek <52711401+lek18@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "02_experiment_tracking"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+mlflow = "^2.3.1"
+jupyter = "^1.0.0"
+scikit-learn = "^1.2.2"
+pandas = "^2.0.1"
+seaborn = "^0.12.2"
+hyperopt = "^0.2.7"
+xgboost = "^1.7.5"
+fastparquet = "^2023.4.0"
+boto3 = "^1.26.126"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
