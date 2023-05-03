@@ -39,13 +39,13 @@ def preprocess(df: pd.DataFrame, dv: DictVectorizer, fit_dv: bool = False):
 def run(raw_data_path: str, dest_path: str, dataset: str = "green"):
     # load parquet files
     df_train = read_dataframe(
-        os.path.join(raw_data_path, f"{dataset}_tripdata_2021-01.parquet")
+        os.path.join(raw_data_path, f"{dataset}_tripdata_2023-01.parquet")
     )
     df_valid = read_dataframe(
-        os.path.join(raw_data_path, f"{dataset}_tripdata_2021-02.parquet")
+        os.path.join(raw_data_path, f"{dataset}_tripdata_2023-02.parquet")
     )
     df_test = read_dataframe(
-        os.path.join(raw_data_path, f"{dataset}_tripdata_2021-03.parquet")
+        os.path.join(raw_data_path, f"{dataset}_tripdata_2023-03.parquet")
     )
 
     # extract the target
